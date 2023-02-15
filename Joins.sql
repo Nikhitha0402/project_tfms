@@ -4,5 +4,5 @@ select c.topic_name as 'Topic',q.question_section as 'Section',avg(c.rating) as 
 
 select topic_name as 'Topic',avg(rating) as 'Average Topic Rating' from capture_feedback group by(topic_name);
 
-select t.trainer_name as 'Trainer',avg(c.rating) as 'Average Trainer Rating'from capture_feedback c join trainer_details t on c.trainer_id=t.trainer_id group by c.trainer_id;
+select t.trainer_name as 'Trainer',avg(c.rating) as 'Average Trainer Rating'from capture_feedback c join trainer_details t on c.trainer_id=t.trainer_id group by c.trainer_id limit 1;
 select avg(rating) from capture_feedback;

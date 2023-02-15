@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>FeedbackPage</servlet-name>
+  	<display-name>FeedbackPage</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.servlets.FeedbackPage</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginAuthentication</servlet-name>
+  	<display-name>LoginAuthentication</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.servlets.LoginAuthentication</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Done</servlet-name>
+  	<display-name>Done</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.servlets.Done</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FeedbackPage</servlet-name>
+  	<url-pattern>/FeedbackPage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginAuthentication</servlet-name>
+  	<url-pattern>/LoginAuthentication</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Done</servlet-name>
+  	<url-pattern>/Done</url-pattern>
+  </servlet-mapping>
+</web-app>
