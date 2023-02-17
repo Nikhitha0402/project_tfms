@@ -64,14 +64,14 @@ public class Done extends HttpServlet {
 			
 		
 	   		for(int i=0;i<8;i++){
-	   		String trainerName="1001";
-		   	String traineeName=userName;
+	   		String trainerId="1001";
+		   	String traineeId=userName;
 		   	String topic="core java";
 		   	String sql="INSERT INTO Capture_Feedback(trainer_id,Associate_id,topic_name,question_id,rating)VALUES(?,?,?,?,?)";
 			PreparedStatement ps=connection.prepareStatement(sql);
 			
-			ps.setString(1, trainerName);
-			ps.setString(2, traineeName);
+			ps.setString(1, trainerId);
+			ps.setString(2, traineeId);
 			ps.setString(3, topic);
 			ps.setString(4, id.get(i));
 			ps.setString(5, li.get(i));

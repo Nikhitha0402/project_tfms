@@ -5,6 +5,7 @@ join capture_feedback x on t.trainer_id=x.trainer_id where x.trainer_id=f.traine
 group by f.trainer_id,f.topic_name,q.question_section order by f.trainer_id;
 
 select*from bySection;
+select*from byTrainer;
 
 drop view byTrainer;
 create view byTrainer as select t.trainer_name as 'TrainerName',avg(f.rating) as 'Rating' from capture_feedback f join trainer_details t on f.trainer_id=t.trainer_id group by f.trainer_id;

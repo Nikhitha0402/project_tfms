@@ -71,7 +71,7 @@
 	ResultSet rs1 = stmt1.executeQuery(sq);%>
       <TABLE class="table table-responsive table-borderLess" style="text-align:center">
       <TR>
-      <th scope='col' width="20%">Trainer_Name</th>
+      <th scope='col' width="20%">Trainer Name</th>
       <th scope='col' width="20%">Overall Rating</th>
      
       
